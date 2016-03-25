@@ -1,0 +1,30 @@
+<div layout="column" flex>
+
+  <md-content>
+    <header>
+      <md-toolbar class="md-whiteframe-glow-z1 site-content-toolbar" layout="row" layout-align="center center">
+        Programming Language Helper
+      </md-toolbar>
+    </header>
+
+    <section class="site-content-body" layout="column" layout-align="center center">
+      <ui-view>
+        <h1>Hello there!</h1>
+        <p class="lead">
+          Can't decide which language to use in your new project?
+        </p>
+        <md-button class="md-raised md-primary" ui-sref="home.start()">Let's find</md-button>
+      </ui-view>
+    </section>
+
+    <footer>
+      <md-button class="plh-about-btn" ng-click="main.showAbout()">
+        About
+      </md-button>
+      <md-button class="md-fab md-fab-bottom-right animated infinite" ui-sref="home" ng-class="{ rubberBand: !main.isAutoRenewBtnDisabled() }" ng-disabled="main.isAutoRenewBtnDisabled()" aria-label="Start Over">
+        <md-icon class="material-icons md-48">autorenew</md-icon>
+      </md-button>
+    </footer>
+  </md-content>
+
+</div>

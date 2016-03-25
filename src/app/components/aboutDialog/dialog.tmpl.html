@@ -1,0 +1,45 @@
+<md-dialog aria-label="About"  ng-cloak>
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>About Me</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <h2>Who are you?</h2>
+        <p>
+          I'm Batman! But keep it secret my real name is Saran Siriphantnon :D I'm look like Christian Bale btw.
+        </p>
+        <h2>Why are you doing this?</h2>
+        <p>
+          For fun, what do you expect more?
+        </p>
+        <h2>And even in AngularJS...</h2>
+        <p>
+          Yes! People hate AngularJS and I hate it too! So I do it in AngularJS.
+        </p>
+        <h2>Are you crazy?</h2>
+        <p>
+          Do you think who in his/her right mind would do this? That's ridiculous.
+        </p>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button href="https://github.com/deoxen0n2" target="_blank">
+        More on Github
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="answer('not useful')">
+        Not Useful
+      </md-button>
+      <md-button ng-click="answer('useful')" style="margin-right:20px;">
+        Useful
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
